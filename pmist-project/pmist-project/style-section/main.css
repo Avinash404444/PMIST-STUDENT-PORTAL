@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.nav-section{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+.nav-logo{
+    width: fit-content;
+    height: 100%;
+}
+.nav-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.line{
+    margin-left: 15%;
+    align-self: self-end;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(108, 106, 106);
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+.side-nav-section{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(2,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+}
+ul{
+    display: flex;
+}
+li{
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    list-style: none;
+    padding-left: 35px;
+    align-self: center;
+    cursor: pointer;
+}
+.nav-element{
+    width: fit-content;
+    margin: 0 10px 0 auto;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+}
+.apply-cation-btn{
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 30px;
+    justify-self: end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 170px;
+    text-align: center;
+    height: 30px;
+    background: rgba(255, 174, 0, 1);
+    color: #282828;
+}
+.apply-cation-btn p{
+     font-family: "Figtree", sans-serif;
+     font-weight: 600;
+     font-size: 15px;
+    margin-top: 5px;
+}
+.special-li{
+    margin-left: 30px;
+    width: 150px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 30px;
+    align-content: center;
+    padding-left: 0;
+}
+.special-li p{
+    justify-self: center;
+}
+.student-banner{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.student-banner-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.student-text{
+    font-family: "Figtree", sans-serif;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 40px;
+    background-color: aliceblue;
+    align-content: center;
+    text-align: center;
+}
+.center-content{
+    padding-top: 5%;
+    width:100%;
+    height: 100%;
+    background-image: url("../image-section/bg-img.jpg");
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 100px 2fr 0.5fr;
+    grid-template-rows: 90px 1fr 90px;
+}
+.center-image-section{
+    width: 100%;
+    height: 100%;
+    background-color: #328bba;
+    position: relative;
+}
+.inner-image{
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 2%;
+}
+.img-one{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+ .innner-center-content-left{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    display: grid;
+    row-gap: 30px;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: 1fr;
+ }
+.innner-center-content-right{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+.img-two{
+    grid-row: 2/3;
+    grid-column: 2/3
+}
+.img-three{
+    grid-row:3/4;
+    grid-column: 2/3
+}
+.img-four{
+    grid-row: 4/5;
+    grid-column: 2/3
+}
+.img-fi{
+    grid-row: 5/6;
+    grid-column: 2/3
+}
+.img-six{
+    grid-row: 6/7;
+    grid-column:2/3 ;
+}
+.innner-center-content-right{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/4;
+    grid-column: 4/5;
+    display: grid;
+    row-gap: 30px;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: 1fr;
+}
+.center-line{
+    justify-self: center;
+    width: 3px;
+    grid-column: 3/4;
+    height: 100%;
+    grid-row: 1/3;
+    border-left: 1px dashed #328bba;
+    
+}
+.inner-tittle{
+    top: 88%;
+    left: 5%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+.inner-tittle a{
+    width: 100%;
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: aliceblue;
+    text-decoration: none;
+}
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, .90) 100%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.footer{
+    height: 300px;
+    width:100%;
+    display: grid;
+    grid-template-columns:50px 1fr 10px 1fr 50px ;
+    grid-template-rows: 50px 1fr 50px ;
+}
+.footer-img{
+    width: 100%; 
+    height: 100%;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+}
+
+.footer-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.left-side-content{
+    font-family: "Figtree", sans-serif;
+    color: azure;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.left-side-content h3{
+    padding: 30px 30px 10px 30px;
+}
+.left-side-content-p{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left-side-content-p p{
+    padding: 10px 10px;
+    font-size: 14px;
+}
+.footer-icon{
+    padding: 20px;
+    width: 100%;
+}
+.footer-icon i{
+    margin: 0 10px;
+    cursor: pointer;
+}
+.footer-copy-write{
+    align-self: center;
+    grid-row: 3/-1;
+    grid-column: 2/3;
+}
+
+.footer-copy-write p{
+    font-size: 11px;
+    color: white;
+    font-family: "Figtree", sans-serif;
+    margin-left:40px ;
+    cursor: pointer;
+}
+.bottem-line{
+    background-color: white;
+    width:100% ;
+    height: 1px;
+    grid-column: 2/5;
+    grid-row: 3/4;
+}
+
+.right-side-content{
+    font-family: "Figtree", sans-serif;
+    color: azure;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 4/5;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+.last-p{
+    font-size: 13px;
+    padding: 3px 10px 7px 10px;
+    margin: 10px 0;
+    height: 10px;
+    cursor: pointer;
+}
+
+.li-p{
+    border-right: 1px solid rgb(255, 255, 254);
+    font-size: 13px;
+    padding: 3px 10px 7px 10px;
+    margin: 10px 0;
+    height: 10px;
+    cursor: pointer;
+}
+.brand-name{
+    font-size: 13px;
+    grid-row: 3/4;
+    grid-column: 4/5;
+    font-family: "Figtree", sans-serif;
+    color: azure;
+    align-self: center;
+    justify-self: end;
+    cursor: help;
+}
+.horizontal-line{
+    height: 90%;
+    grid-row:2/3 ;
+    border-right: 1px dashed white;
+    grid-column: 3/4;
+}
+.side-bar,.apply-cation-btn-student{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1480px) {
+    .nav-section{
+        height: 90px;
+    }
+    .student-banner{
+        height: 300px;
+    }
+    .side-bar{
+        display: block;
+        grid-column: 2/3;
+        grid-row: 1/-1;
+        justify-self: end;
+    }
+    .line,.center-line,.apply-cation-btn,.student-text,.nav-element{
+        display: none;
+    }
+   .apply-cation-btn-student{
+        display: block;
+        font-family: "Figtree", sans-serif;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100px;
+        height: 40px;
+        background: rgba(255, 174, 0, 1);
+        align-content: center;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .apply-cation-btn-student p{
+        font-family: "Figtree", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .apply-cation-btn p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .center-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .innner-center-content-left,.innner-center-content-right{
+        width: 85%;
+        margin: 30px auto 10px auto;
+        border-radius: 5px;
+    }
+    .footer{
+        background-image: url(image-section/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-img,.horizontal-line{
+        display: none;
+    }
+    .footer-copy-write p{
+        margin: 10px auto 10px auto;
+    }
+    .brand-name{
+        margin: 5px auto 10px auto;
+    }
+
+    .left-side-content-p p{
+        font-size: 12px;
+    }
+    .last-p{
+        font-size: 13px;
+        padding: 3px 10px 7px 10px;
+        margin: 10px 0 20px 0;
+        height: 10px;
+    }
+    .li-p{
+        border-right: 1px solid rgb(255, 255, 254);
+        font-size: 13px;
+        padding: 3px 10px 7px 10px;
+        margin: 10px 0 0 0;
+        height: 10px;
+    }
+    .footer-icon{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .bottem-line{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .inner-tittle{
+        top: 80%;
+        left: 5%;
+        cursor: pointer;
+    }
+}
+
+/* 
+.apply-cation-btn{
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 30px;
+    justify-self: end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 170px;
+    text-align: center;
+    height: 30px;
+    background: rgba(255, 174, 0, 1);
+    color: #282828;
+}
+.apply-cation-btn p{
+     font-family: "Figtree", sans-serif;
+     font-weight: 600;
+     font-size: 15px;
+    margin-top: 5px;
+} */
