@@ -16,7 +16,7 @@
         </div>
         <div class="side-nav-section">
             <div class="line"></div>
-            <div class="side-bar"><i class="fa-solid fa-bars fa-2xl" style="color: #050505;"></i></div>
+            <div class="side-bar"><i class="fa-solid fa-bars fa-2xl open-bar" id="bar" style="color: #050505;"></i></div>
             <div class="nav-element">
                 <ul>
                     <li>Home</li>
@@ -38,7 +38,18 @@
         <img class="student-banner-img" src="../image-section/banner-bg.jpg" alt="">
 
         <div class="student-text"><p>student portal</p></div>
-
+        <div class="mobile-version-nav">
+             <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">academics</a></li>
+                    <li><a href="">admission</a></li>
+                    <li><a href="">research</a></li>
+                    <li><a href="">iqac</a></li>
+                    <li><a href="">facilities</a></li>
+                    <li><a href="">chat with student</a></li>
+                </ul>
+        </div>
         <div class="apply-cation-btn-student"><p>apply now 2025-26</p></div>
 
     </div>
@@ -75,7 +86,7 @@
                <div class="center-image-section img-fi">
                 <div class="overlay-img"></div>
                 <img class="inner-image" src="../image-section/img-6.jpg" alt="">
-                <div class="inner-tittle"><a href="">semster attenddance</a></div>
+                <div class="inner-tittle"><a href="">semster attendance</a></div>
                 <div class="line-bro"></div>
             </div>
 
@@ -173,4 +184,24 @@
     </div>
 </body>
 <script src="https://kit.fontawesome.com/b928c8f205.js" crossorigin="anonymous"></script>
+<script>
+const bar = document.getElementById("bar");
+const mobileNav = document.querySelector(".mobile-version-nav");
+const sidebar = document.querySelector(".side-bar");
+
+bar.addEventListener("click", () => {
+  const isOpen = bar.classList.contains("open-bar");
+
+  if (isOpen) {
+    mobileNav.style.display = "block";
+    bar.className = "fa-solid fa-xmark fa-2xl close-bar";
+    sidebar.style.margin = "10px";
+  } else {
+    mobileNav.style.display = "none";
+    bar.className = "fa-solid fa-bars fa-2xl open-bar";
+    sidebar.style.margin = "0";
+  }
+});
+
+</script>
 </html>
