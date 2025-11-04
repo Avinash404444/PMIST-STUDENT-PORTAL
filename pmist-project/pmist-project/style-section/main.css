@@ -336,6 +336,9 @@ li{
     display: none;
     cursor: pointer;
 }
+.mobile-version-nav{
+    display: none;
+}
 
 @media screen and (max-width:1480px) {
     .nav-section{
@@ -353,6 +356,37 @@ li{
     .line,.center-line,.apply-cation-btn,.student-text,.nav-element{
         display: none;
     }
+    .mobile-version-nav{
+        display: none;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 180px;
+        position: absolute;
+        top:0;
+        right: 0;
+        border-radius: 2px;
+    }
+     .mobile-version-nav ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+     }
+     .mobile-version-nav ul li{
+        text-align: center;
+        border: 0.1px solid rgb(82, 82, 82);
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 0 0 0 0;
+        margin: 2px 1% 2px 1% ;
+        height: 90%;
+        width: 95%;
+        align-content: center;
+     }
+     .mobile-version-nav ul li a{
+        text-decoration: none;
+        color: #282828;
+     }
    .apply-cation-btn-student{
         display: block;
         font-family: "Figtree", sans-serif;
@@ -388,7 +422,7 @@ li{
         border-radius: 5px;
     }
     .footer{
-        background-image: url(image-section/footer-bg.jpg);
+        background-image: url(../image-section/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center ;
@@ -436,24 +470,3 @@ li{
         cursor: pointer;
     }
 }
-
-/* 
-.apply-cation-btn{
-    cursor: pointer;
-    margin-right: 20px;
-    border-radius: 30px;
-    justify-self: end;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    width: 170px;
-    text-align: center;
-    height: 30px;
-    background: rgba(255, 174, 0, 1);
-    color: #282828;
-}
-.apply-cation-btn p{
-     font-family: "Figtree", sans-serif;
-     font-weight: 600;
-     font-size: 15px;
-    margin-top: 5px;
-} */
