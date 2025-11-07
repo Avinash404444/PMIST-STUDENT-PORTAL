@@ -1,0 +1,273 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: capitalize;
+}
+
+.inner-section{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px minmax(400px,1fr) 250px;
+    grid-template-rows: 100px 1fr 100px ;
+}
+.topsection{
+    height: 100px;
+    background-image: url("../image-section/haeder-bg.png");
+    background-color: #31a0d3;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    display: flex;
+}
+.pmist-logo{
+    margin-top: 1.5px;
+    width: 255px; 
+    height: 100%;
+    background-image: url("../image-section/pmu-logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.page-tittle{
+    font-size: 23px;
+    align-self: center;
+    margin: 0 auto;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.side-bar{
+    align-self: center;
+}
+.text-spinning{
+    margin-top: 10px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    width: 100%;
+    height: 30px;
+    overflow-x: hidden;
+}
+.inner-text-spinning{
+    display: flex;
+    animation: spin 20s infinite linear;
+     white-space: nowrap;
+}
+
+@keyframes spin{
+   from{translate: 50%;}
+    to{translate: -100%;}
+}
+
+/* side bar element */
+
+.side-bar-element{
+    background-image: url("../image-section/bg-img.jpg");
+    width: 100%;
+    height: 100%;
+    background-color:hsl(0, 0%, 100%);
+    grid-row: 1/-1;
+    grid-column: 4/5;
+    z-index: 1;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 10px 0 0 10px;
+    display: none;
+}
+.menu-section{
+    width:100%;
+    height:100px;
+    align-items: center;
+    display: flex;
+    background-color: #31a0d3;
+    background-image: url("../image-section/haeder-bg.png");
+    border-radius: 10px 0 5px 5px;
+}
+.menu-section h1{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0 auto 0 auto;
+}
+.menu-section i{
+    margin: 0 0 0 10px ;
+}
+.element{
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    width: 95%;
+    height: 50px;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    background-color:#31a0d3;
+    cursor: pointer;
+    display: flex;
+}
+.element a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #ffffff;
+    margin:auto auto;
+}
+.firstelement{
+    margin-top: 50px;
+}
+
+
+.login-page{
+    position: relative;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 450px;
+    height: 600px;
+    background: #ffffffc4;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    box-shadow:2px 5px 10px gray ;
+}
+.log-heading{
+    grid-row: 1/2;
+    align-content: center;
+    justify-items: center;
+    text-transform: capitalize;
+}
+.login-btn{
+    width:90% ;
+    height: 60px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #31a0d3;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    cursor: pointer;
+}
+.login-btn h2{
+    justify-self: center;
+    color: #ffffff;
+}
+.reg-section{
+    justify-self: center;
+    grid-row: 2/3;
+    width: 90%;
+    height: 98%;
+    border:  1px solid rgb(158, 152, 152);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 60px 50px 10px 50px 1fr 50px;
+    grid-template-columns: 0.7fr 1fr;
+}
+.reg-tittle{
+    align-self: center;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+.reg-number-tittle{
+    grid-row: 2/3;
+}
+.rg-pass-tittle{
+    grid-row: 4/5;
+}
+.password{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.user-id{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.reg-input{
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    text-transform: capitalize;
+    align-self: center;
+    width: 70%;
+    height: 40px;
+    justify-self: center;
+    padding: 0 10px 0 10px;
+}
+.forgot-pass{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    margin-right: 30px;
+    grid-row: 6/7; 
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: end;
+    text-transform: capitalize;
+}
+.reg-heading{
+    grid-column: 1/-1;
+    text-transform: capitalize;
+    justify-self: center;
+    align-self: center;
+}
+.information-sharing{
+    grid-row: 5/6;
+    grid-column: 1/-1;
+    width: 95%;
+    height: 90%;
+    align-self: center;
+    justify-self: center;
+    border: 1px dashed black;
+    border-radius: 10px;
+}
+.information-sharing p{
+    margin: 5px 0 10px 10px;
+
+}
+.recreated-details{
+    height: 50px;
+    width: 100%;
+    align-content: center;
+    justify-items: end;
+}
+
+.recreated-details p{
+    cursor: help;
+    margin-right: 20px;
+    font-weight: 400;
+    
+}
+
+@media screen and (max-width:600px){
+    .inner-section{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .pmist-logo{
+        align-self: center;
+        width:86px;
+        height: 80px; 
+        background-image: url("../image-section/logo-1.png");
+        border-radius: 10px;
+    }
+    .page-tittle h1{
+        font-size: 30px;
+    }
+    .login-page{
+        margin: auto auto auto auto;
+        width:90%;
+    }
+    p{
+        font-size: 15px;
+    }
+    .side-bar{
+        display: block;
+    }
+    .side-bar-element{
+        height: 99.8vh;
+        width: 60%;
+        position: fixed;
+        right: 0;
+    }
+    .topsection{
+        height: 85px;
+    }
+    .menu-section{
+        height: 85px;
+    }
+}

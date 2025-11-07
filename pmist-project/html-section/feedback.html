@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feed back</title>
+    <link rel="stylesheet" href="../style-section/feedback.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+         <div class="nave-section">
+            <div class="pmu-logo"></div>
+            <div class="protal-name"><h1>feed back</h1></div>
+             <div class="side-bar"><i class="fa-solid fa-bars fa-2xl open-bar" style="color:#ffffff" id="bar" style="color: #050505;"></i></div>
+        </div> 
+         <div class="side-bar-element">
+                <div class="nav-element">
+                    <div class="menu-section"><i class="fa-solid fa-xmark fa-2xl close-bar" style="color: #ffffff;"></i><h1>menu</h1></div>
+                    <div class="element firstelement"><a href="../html-section/main.html">home</a></div><!-- <p>home</p> -->
+                    <div class="element"><a href="../html-section/payment.html">online payment</a></div><!-- <p>online payment</p> -->
+                    <div class="element"><a href="">attendance</a></div><!-- <p>attendance</p> -->
+                    <div class="element"><a href="../html-section/sem-result.html">semester result</a></div><!-- <p>semester result</p> -->
+                    <div class="element"><a href="../html-section/student activity.html">student activity</a></div><!-- <p>complaint</p> -->
+                    <div class="element"><a href="">report</a></div><!-- <p>report</p> -->
+                </div>
+        </div>
+
+    <div class="login-page">
+            <div class="log-heading"><h1>login section :</h1></div>
+            <div class="login-btn"><h2>login</h2></div>
+            <div class="reg-section">
+                <div class="reg-heading"><h2>enter you'r details :</h2></div>
+                 <label class="reg-tittle reg-number-tittle" for="reg">register number:</label>
+                    <input class="reg-input user-id" type="text" id="reg"  placeholder="register number">
+                <label class="reg-tittle rg-pass-tittle" for="pass">enter your password:</label>
+                    <input class="reg-input password" type="password" id="pass" placeholder="password">
+
+                    <div class="forgot-pass"><p>forgot-password</p></div>
+                    <div class="information"><p>* If you face any issues or need further information, please contact to class "incharge" or "brain department"</p></div>
+                    
+            </div>
+    </div>
+    <div class="recreated-details"><p>re-created by: avinash k</p></div>
+</body>
+<script src="https://kit.fontawesome.com/b928c8f205.js" crossorigin="anonymous"></script>
+<script>
+   const sidebar=document.querySelector(".side-bar-element")    
+    document.querySelector('.close-bar').addEventListener("click",()=>sidebar.style.display="none")
+    document.querySelector(".open-bar").addEventListener("click",()=>sidebar.style.display="block")
+    document.querySelector(".login-page").addEventListener("click",()=>sidebar.style.display="none")
+</script>
+</html>

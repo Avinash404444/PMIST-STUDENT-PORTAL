@@ -1,0 +1,236 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-transform: capitalize;
+    font-family: "Roboto Condensed", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nave-section{
+    width: 100%;
+    height: 100px;
+    background-image: url(../image-section/haeder-bg.png);
+    background-color: #31a0d3;
+    display: flex;
+    position: relative;
+} 
+.pmu-logo{
+    margin-top: 3px;
+    width: 250px; 
+    background-image: url("../image-section/pmu-logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+
+.side-bar{
+    align-self: center;
+}
+
+.protal-name{
+    margin:0 auto; 
+    align-self: center;
+    color: #ffffff;
+}
+/* side bar section */
+
+.side-bar-element{
+    background-image: url("../image-section/bg-img.jpg");
+    height: 99.8vh;
+    width: 250px;
+    position: fixed;
+    right: 0;
+    background-color:hsl(0, 0%, 100%);
+    grid-row: 1/-1;
+    grid-column: 4/5;
+    z-index: 1;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 10px 0 0 10px;
+    display: none;
+}
+.menu-section{
+    width:100%;
+    height:100px;
+    align-items: center;
+    display: flex;
+    background-color: #31a0d3;
+    background-image: url("../image-section/haeder-bg.png");
+    border-radius: 10px 0 5px 5px;
+}
+.menu-section h1{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0 auto 0 auto;
+}
+.menu-section i{
+    margin: 0 0 0 10px ;
+}
+.element{
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    width: 95%;
+    height: 50px;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    background-color:#31a0d3;
+    cursor: pointer;
+    display: flex;
+}
+.element a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #ffffff;
+    margin:auto auto;
+}
+.firstelement{
+    margin-top: 50px;
+}
+
+
+
+.login-page{
+    margin: auto auto auto auto;
+    width: 450px;
+    height: 500px;
+    background: #ffffffc4;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    box-shadow:2px 5px 10px gray ;
+}
+.log-heading{
+   
+    grid-row: 1/2;
+    align-content: center;
+    justify-items: center;
+}
+.login-btn{
+    width:90% ;
+    height: 60px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #31a0d3;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    cursor: pointer;
+}
+.login-btn h2{
+    justify-self: center;
+   
+    color: #ffffff;
+}
+.reg-section{
+    justify-self: center;
+    grid-row: 2/3;
+    width: 90%;
+    height: 95%;
+    border:  1px solid rgb(158, 152, 152);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 60px 20px 50px 20px 50px 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+}
+.reg-tittle{
+    align-self: center;
+   
+    margin-left: 20px;
+}
+.reg-number-tittle{
+    grid-row: 3/4;
+}
+.rg-pass-tittle{
+    grid-row:5/6;
+}
+.password{
+    grid-row:5/6;
+    grid-column: 2/3;
+}
+.user-id{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.reg-input{
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+   
+    align-self: center;
+    width: 70%;
+    height: 40px;
+    justify-self: center;
+    padding-left: 10px;
+    padding-right: 10PX;
+}
+.forgot-pass{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    margin-right: 30px;
+   
+    grid-row: 7/8; 
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: end;
+}
+.reg-heading{
+    grid-column: 1/-1;
+   
+    justify-self: center;
+    align-self: center;
+}
+.information{
+   
+    grid-row: 6/7;
+    grid-column: 1/-1;
+    margin: 0 5px 0 20px;
+    align-self: end;
+}
+
+.recreated-details{
+    height: 50px;
+    width: 100%;
+    align-content: center;
+    justify-items: end;
+}
+
+.recreated-details p{
+    cursor: help;
+    margin-right: 20px;
+    font-weight: 400;
+    
+}
+@media screen and (max-width:500px){
+
+    .login-page{
+        margin: auto auto auto auto;
+        width: 80%;
+    }
+    .nave-section{
+        height: 85px;
+    }
+    .pmu-logo{
+        align-self: center;
+        width:86px;
+        height: 80px; 
+        background-image: url("../image-section/logo-1.png");
+        border-radius: 10px;
+    }
+    .side-bar{
+        display: block;
+    }
+    .side-bar-element{
+        width: 60%;
+    }
+    .menu-section{
+        height: 85px;
+    }
+
+}
